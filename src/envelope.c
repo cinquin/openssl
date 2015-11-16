@@ -92,7 +92,7 @@ SEXP R_envelope_decrypt(SEXP data, SEXP iv, SEXP session, SEXP key) {
 
   /* Create RAW vector */
   SEXP res = allocVector(RAWSXP, len1 + len2);
-  memcpy(RAW(res), out,  len1 + len2);
+  //memcpy(RAW(res), out,  len1 + len2);
   free(out);
   return res;
 }
